@@ -1,4 +1,17 @@
 class Solution:
+# more efficient solution. Uses HashSets
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        output = []
+        hashSet = set(nums1)
+        for i in nums2:
+            if i in hashSet:
+                output.append(i)
+                hashSet.remove(i)
+        
+        return output
+
+
+# Less efficient solution but is more efficient as compared to linear searching throughout the array
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         result = []
         mini = nums1 if len(nums1)<len(nums2) else nums2
