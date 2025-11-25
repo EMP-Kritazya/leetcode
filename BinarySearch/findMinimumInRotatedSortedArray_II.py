@@ -1,3 +1,4 @@
+# Medium Level Problem
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         l, r = 0, len(nums)-1
@@ -21,5 +22,5 @@ class Solution:
                     r = r - 1
                 else:
                     return nums[r]
-                    
+
         return nums[l]
