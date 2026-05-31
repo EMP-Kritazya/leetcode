@@ -1,2 +1,2 @@
 # leetcode
-solving BigAce Problems
+solving interesting Leetcode Problems
